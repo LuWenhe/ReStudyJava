@@ -5,6 +5,41 @@ import org.junit.Test;
 public class StringTest {
 
     @Test
+    public void testString6() {
+        String s1 = new String("abc");
+        String s2 = s1;
+        String s4 = s1;
+        String s3 = new String("abc");
+
+        System.out.println(s1 == s2);
+        System.out.println(s1 == s3);
+        System.out.println(s2 == s3);
+
+        s1 = "abc";
+
+        System.out.println(s1 == s2);
+        System.out.println(s2 == s4);
+        System.out.println(s1 == s3);
+        System.out.println(s2 == s3);
+    }
+
+    @Test
+    public void testString5() {
+        String s1 = "abc";
+        String s2 = s1;
+        String s3 = "abc";
+        System.out.println(s1 == s2);
+        System.out.println(s1 == s3);
+        System.out.println(s2 == s3);
+
+        s1 = "bcd";
+
+        System.out.println(s1 == s2);
+        System.out.println(s1 == s3);
+        System.out.println(s2 == s3);
+    }
+
+    @Test
     public void stringBuilderTest() {
         StringBuilder stringBuilder = new StringBuilder("hello");
         System.out.println(stringBuilder);

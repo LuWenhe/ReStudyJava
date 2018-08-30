@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExceptionTest/ExceptionTest.iml" filepath="$PROJECT_DIR$/ExceptionTest/ExceptionTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FinalTest/FinalTest.iml" filepath="$PROJECT_DIR$/FinalTest/FinalTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/FlowTest/FlowTest.iml" filepath="$PROJECT_DIR$/FlowTest/FlowTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InnerTest/InnerTest.iml" filepath="$PROJECT_DIR$/InnerTest/InnerTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterfaceTest/InterfaceTest.iml" filepath="$PROJECT_DIR$/InterfaceTest/InterfaceTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/InterviewTest/InterviewTest.iml" filepath="$PROJECT_DIR$/InterviewTest/InterviewTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObjectTest/ObjectTest.iml" filepath="$PROJECT_DIR$/ObjectTest/ObjectTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/OperatorTest/OperatorTest.iml" filepath="$PROJECT_DIR$/OperatorTest/OperatorTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringTest/StringTest.iml" filepath="$PROJECT_DIR$/StringTest/StringTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inheritTest/inheritTest.iml" filepath="$PROJECT_DIR$/inheritTest/inheritTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/initializationTest/initializationTest.iml" filepath="$PROJECT_DIR$/initializationTest/initializationTest.iml" />
     </modules>
   </component>

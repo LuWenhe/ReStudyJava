@@ -7,16 +7,6 @@ import java.util.List;
 
 public class OtherTest {
 
-    /*void print() {
-        int i;
-        System.out.println(i);
-    }*/
-
-    @Test
-    public void test() {
-
-    }
-
     @Test
     public void testList() {
         List Listlist1 = new ArrayList();
