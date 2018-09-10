@@ -1,31 +1,54 @@
 package edu.just.test;
 
-class Outer {
+class OuterClass {
+    private int i = 1;
+    public static String str = "str";
 
-    private int a = 1;
+    public void print() {
+        System.out.println("outerclass");
+    }
 
-    class Inner {
-        private int a = 2;
-        public void print() {
-            int a = 3;
-            System.out.println("局部变量: " + a);
-            System.out.println("内部类变量: " + this.a);
-            System.out.println("外部类变量: " + Outer.this.a);
+    static class StaClass {
+        private String s = "s";
+        static int j = 2;
+
+        static int getInt() {
+            return j;
+        }
+
+        private String getString() {
+            return str + s;             //此处访问到外部类的静态变量
+        }
+
+        static class InStaClass {
+            int x = 4;
+            static int y = 5;
+            static int getInt() {
+//                return x;
+                return y;
+            }
         }
     }
 
-    private class Inner2 {
-        public void print2(){
-            System.out.println("Inner2");
-        }
+    class InnerClass {
+//        static int a = 1;
+    }
+
+    public StaClass getInner() {
+        return new StaClass();
     }
 }
 
 public class Test2 {
-
     public static void main(String[] args) {
-        Outer outer = new Outer();
-        outer.new Inner().print();
-    }
+        int anInt = OuterClass.StaClass.getInt();
+        System.out.println(anInt);
 
+//        OuterClass.StaClass.getString();
+
+        int anInt1 = OuterClass.StaClass.InStaClass.getInt();
+        System.out.println(anInt1);
+
+        new OuterClass().getInner();
+    }
 }

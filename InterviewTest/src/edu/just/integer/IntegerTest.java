@@ -5,7 +5,25 @@ import org.junit.Test;
 public class IntegerTest {
 
     @Test
-    public void test8(){
+    public void test10() {
+        System.out.println(0.1 + 0.2);
+        System.out.println(3 * 0.1);
+        System.out.println(4 * 0.1);
+        System.out.println(3 * 0.1 == 0.3);
+        System.out.println(13 * 0.1 == 1.3);
+        System.out.println(9 * 0.1 == 0.9);
+        System.out.println(3 * 0.1 / 3);
+    }
+
+    @Test
+    public void test9() {
+        double d = Math.cos(45);
+        double v = Math.toRadians(45);
+        System.out.println(d + " " + v);
+    }
+
+    @Test
+    public void test8() {
         int a = Integer.parseInt("200");
         int b = Integer.valueOf(200).intValue();
         System.out.println(a == b);

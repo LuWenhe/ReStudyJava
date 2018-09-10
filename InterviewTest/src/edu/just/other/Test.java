@@ -1,27 +1,27 @@
 package edu.just.other;
 
-class A {
-    A(){
-        System.out.println("A...");
-    }
-}
-
-class B {
-    B(){
-        System.out.println("B...");
-    }
-}
-
-class C extends B{
-    C(){
-        System.out.println("C...");
-    }
-}
-
 public class Test {
 
+    private static void test(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            try {
+                if (arr[i] % 2 == 0) {
+                    throw new NullPointerException();
+                } else {
+                    System.out.print(i);
+                }
+            } finally {
+                System.out.print("e");
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        A c = new C();
+        try {
+            test(new int[] {0, 1, 2, 3, 4, 5});
+        } catch (Exception e) {
+            System.out.print("E");
+        }
     }
 
 }

@@ -3,6 +3,12 @@ package edu.just.clone;
 class Student implements Cloneable {
 
     private int number;
+    private String name;
+
+    public Student(int number, String name) {
+        this.number = number;
+        this.name = name;
+    }
 
     public int getNumber() {
         return number;
@@ -12,37 +18,33 @@ class Student implements Cloneable {
         this.number = number;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
-    protected Object clone() {
-        Student stu = null;
-
-        try {
-            stu = (Student) super.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-
-        return stu;
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
 
 public class Test {
 
-    public static void main(String[] args) {
-        Student stu1 = new Student();
-        stu1.setNumber(1000);
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Student stu1 = new Student(1000,"luwenhe");
         Student stu2 = (Student) stu1.clone();
 
-        System.out.println("学生1: " + stu1.getNumber());
-        System.out.println("学生2: " + stu2.getNumber());
+        System.out.println("学生1: " + stu1.getName().hashCode());
+        System.out.println("学生2: " + stu2.getName().hashCode());
 
-        stu2.setNumber(2000);
+        stu2.setName("xixixi");
 
-        System.out.println("学生1: " + stu1.getNumber());
-        System.out.println("学生2: " + stu2.getNumber());
-
-        //false, 此时 stu1 和 stu2 不是同一个对象
-        System.out.println(stu1 == stu2);
+        System.out.println("学生1: " + stu1.getName().hashCode());
+        System.out.println("学生2: " + stu2.getName().hashCode());
     }
 
 }

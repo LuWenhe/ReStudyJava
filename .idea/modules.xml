@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/InnerTest/InnerTest.iml" filepath="$PROJECT_DIR$/InnerTest/InnerTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/InterfaceTest/InterfaceTest.iml" filepath="$PROJECT_DIR$/InterfaceTest/InterfaceTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/InterviewTest/InterviewTest.iml" filepath="$PROJECT_DIR$/InterviewTest/InterviewTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListTest/ListTest.iml" filepath="$PROJECT_DIR$/ListTest/ListTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObjectTest/ObjectTest.iml" filepath="$PROJECT_DIR$/ObjectTest/ObjectTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/OperatorTest/OperatorTest.iml" filepath="$PROJECT_DIR$/OperatorTest/OperatorTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringTest/StringTest.iml" filepath="$PROJECT_DIR$/StringTest/StringTest.iml" />

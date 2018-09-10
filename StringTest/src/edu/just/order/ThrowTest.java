@@ -5,20 +5,6 @@ import java.util.List;
 
 public class ThrowTest {
 
-    public static void test(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            try {
-                if (arr[i] % 2 == 0) {
-                    throw new NullPointerException();
-                } else {
-                    System.out.print(i);
-                }
-            } finally {
-                System.out.print("e");
-            }
-        }
-    }
-
     public static List<Object> testWrap(){
         List<Object> list = new ArrayList<>();
 
@@ -79,6 +65,20 @@ public class ThrowTest {
             e.printStackTrace();
         } finally {
             return false;
+        }
+    }
+
+    public static void test(int[] arr) {
+        for (int i=0; i<arr.length; i++){
+            try {
+                if(arr[i] % 2 == 0){
+                    throw new NullPointerException();
+                } else {
+                    System.out.println(i);
+                }
+            } finally {
+                System.out.println("E");
+            }
         }
     }
 
