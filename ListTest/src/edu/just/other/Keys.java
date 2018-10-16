@@ -1,0 +1,18 @@
+package edu.just.other;
+
+public class Keys {
+
+    public static int MAX_KEY = 10000000;
+    private static final Key[] KEYS_CACHE = new Key[MAX_KEY];
+
+    static {
+        for (int i=0; i<MAX_KEY; i++) {
+            KEYS_CACHE[i] = new Key(i);
+        }
+    }
+
+    public static Key of(int value) {
+        return KEYS_CACHE[value];
+    }
+
+}

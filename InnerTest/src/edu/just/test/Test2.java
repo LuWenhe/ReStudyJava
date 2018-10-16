@@ -1,12 +1,15 @@
 package edu.just.test;
 
 class OuterClass {
+
     private int i = 1;
     public static String str = "str";
 
     public void print() {
         System.out.println("outerclass");
     }
+
+    public static void method() {}
 
     static class StaClass {
         private String s = "s";
@@ -31,7 +34,9 @@ class OuterClass {
     }
 
     class InnerClass {
-//        static int a = 1;
+        public void test() {
+            OuterClass.method();
+        }
     }
 
     public StaClass getInner() {

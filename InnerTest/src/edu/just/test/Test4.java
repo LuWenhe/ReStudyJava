@@ -2,6 +2,9 @@ package edu.just.test;
 
 import edu.just.people.Eat;
 
+/**
+ * 局部内部类
+ */
 class Outer2 {
 
     public Eat print() {

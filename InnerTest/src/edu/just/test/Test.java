@@ -1,7 +1,9 @@
 package edu.just.test;
 
 class Outer {
+
     private String a = "a";
+
     public int i = 1;
 
     class Inner {

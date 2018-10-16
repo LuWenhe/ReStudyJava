@@ -3,10 +3,7 @@ package edu.just.list;
 import edu.just.collection1.Student;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ArrayListTest {
 
@@ -42,7 +39,7 @@ public class ArrayListTest {
 
         Iterator<String> iterator = list.iterator();
         while (iterator.hasNext()){
-            System.out.println(iterator.next());
+            iterator.remove();
         }
 
         for(int i=0; i<list.size(); i++) {
@@ -164,13 +161,16 @@ public class ArrayListTest {
     @Test
     public void arrayListTest() {
         List<Student> list = new ArrayList<>();
-        list.add(new Student(1, "BBB", "BBB@qq.com"));
-        list.add(new Student(2, "CCC", "CCC@qq.com"));
         list.add(new Student(3, "DDD", "DDD@qq.com"));
+        list.add(new Student(1, "BBB", "BBB@qq.com"));
         list.add(new Student(4, "EEE", "EEE@qq.com"));
+        list.add(new Student(2, "CCC", "CCC@qq.com"));
 
-        List<Student> list1 = new ArrayList<>(list);
-        System.out.println(list1);
+        Iterator<Student> iterator = list.iterator();
+        iterator.next();
+        iterator.remove();
+        System.out.println(list);
+
     }
 
 }

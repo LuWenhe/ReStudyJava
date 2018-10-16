@@ -9,6 +9,13 @@ import java.util.Vector;
 public class VectorTest {
 
     @Test
+    public void test() {
+        int a = 10;
+        Integer b = new Integer(10);
+        System.out.println(a == b);
+    }
+
+    @Test
     public void testVector3() {
         List<String> vector = new Vector<>();
         vector.add("AAA");

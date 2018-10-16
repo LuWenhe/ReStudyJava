@@ -10,6 +10,8 @@ public class Test6 {
         return new InnerClass() {
             int num1 = num + 3;
 
+//          str2 = "lww";           //如果形式参数要被使用，则必须定义为 final 类型
+
 //          public InnerClass {}    //你们内部类不能定义构造函数
 
 //          static int a = 1;     //匿名内部类不能存在任何静态成员变量

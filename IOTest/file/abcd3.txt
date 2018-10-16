@@ -1,0 +1,2 @@
+This section begins with a discussion of the Number class
+This section begins with a discussion of the Number class
